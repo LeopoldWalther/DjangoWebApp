@@ -34,7 +34,7 @@ To run the server:
 │
 └── manage.py
 │
-└──hello_world
+└──msci
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
