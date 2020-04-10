@@ -55,7 +55,7 @@ ROOT_URLCONF = 'etf_overview.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        "DIRS": ["etf_overview/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
