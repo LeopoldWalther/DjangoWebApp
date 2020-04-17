@@ -24,18 +24,23 @@ To run the server:
  ```
  DjangoWebApp/
 │
-├── etf_overview/
+├── personal_portfolio/
+│   ├── templates/
+│   │   ├── base.html
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
+│   ├── asgi.py
 │   └── wsgi.py
 │
-├── venv/
+├── venvDWA/
 │
 └── manage.py
 │
-└──msci
+└──projects
 │   ├── __init__.py
+│   ├── migrations/
+│   │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
