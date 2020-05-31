@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+ 2 {% load static %}
+ 3 {% block page_content %}
+ 4 <h1>Projects</h1>
+ 5 <div class="row">
+ 6 {% for project in projects %}
+ 7     <div class="col-md-4">
+ 8         <div class="card mb-2">
+ 9             <img class="card-img-top" src="{% static project.image %}">
+10             <div class="card-body">
+11                 <h5 class="card-title">{{ project.title }}</h5>
+12                 <p class="card-text">{{ project.description }}</p>
+13                 <a href="{% url 'project_detail' project.pk %}"
+14                    class="btn btn-primary">
+15                     Read More
+16                 </a>
+17             </div>
+18         </div>
+19     </div>
+20     {% endfor %}
+21 </div>
+22 {% endblock %}
