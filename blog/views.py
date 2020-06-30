@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import CommentForm
 
 # Create your views here.
 from django.shortcuts import render
